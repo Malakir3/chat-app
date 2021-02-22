@@ -16,7 +16,7 @@
 
 ## rooms テーブル
 
-| Column | Type   | Options]    |
+| Column | Type   | Options     |
 | ------ | ------ | ----------- |
 | name   | string | null: false |
 
@@ -28,15 +28,15 @@
 
 ## room_users テーブル
 
-| Columun | Type       | Options                        |
-| ------- | ---------- | ------------------------------ |
-| user    | references | null: false, foreign_key: true |
-| room    | references | null: false, foreign_key: true |
+| Column | Type       | Options                        |
+| ------ | ---------- | ------------------------------ |
+| user   | references | null: false, foreign_key: true |
+| room   | references | null: false, foreign_key: true |
 
 ### Association
 
-- belongs_to: room
-- belongs_to: user
+- belongs_to :room
+- belongs_to :user
 
 ## messages テーブル
 
@@ -48,5 +48,5 @@
 
 ### Association
 
-- belongs_to: room
-- belongs_to: user
+- belongs_to :room
+- belongs_to :user
